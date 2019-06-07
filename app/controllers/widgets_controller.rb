@@ -1,7 +1,7 @@
 class WidgetsController < ApplicationController
   skip_before_action :verify_authenticity_token
   after_action :allow_iframe
-  layout 'widget'
+  layout 'widget_layout'
 
   def widget
     respond_to do |format|
